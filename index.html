@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Mi Currículum Vitae</title>
+    <title>My Curriculum Vitae</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Currículum de David Luna, desarrollador web con experiencia en HTML, CSS, y JavaScript. Que tiene como hobbie Dibujar.">
+    <meta name="description"
+        content="Curriculum of David Luna, web developer with experience in HTML, CSS, and JavaScript. Hobbies include drawing.">
     <meta name="author" content="David Luna, dalun@espol.edu.ec">
-    <meta name="keywords" content="currículum, desarrollador web, HTML, CSS, JavaScript, David Luna">
-
+    <meta name="keywords" content="curriculum, web developer, HTML, CSS, JavaScript, David Luna">
 </head>
 
 <body>
@@ -17,49 +17,92 @@
         <h1>David Luna</h1>
         <span>daluna@espol.edu.ec</span>
         <span>0987654321</span>
-
     </header>
     <nav>
         <ul>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#estilos">Estilo Artítsco</a></li>
-            <li><a href="#tecnicas">Técnicas de ilustración</a></li>
-            <li><a href="#software">Software que uso</a></li>
-            <li><a href="#muestra">Proyectos</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#styles">Artistic Style</a></li>
+            <li><a href="#techniques">Illustration Techniques</a></li>
+            <li><a href="#software">Software I Use</a></li>
+            <li><a href="#sample">Sample</a></li>
         </ul>
     </nav>
     <main>
-        <section id="portafolio">
-            <h2 class="subtitle">Portafolio</h2>
+        <section id="portfolio">
+            <h2 class="subtitle">Portfolio</h2>
         </section>
-        <section id="estilos">
-            <h2 class="subtitle">Estilo Artítsco</h2>
+        <section id="styles">
+            <h2 class="subtitle">Artistic Style</h2>
             <ul>
-                <li>Semi-Realista</li>
+                <li>Semi-Realistic</li>
             </ul>
         </section>
-        <section id="tecnicas">
-            <h2 class="subtitle">Técnicas de ilustración</h2>
+        <section id="techniques">
+            <h2 class="subtitle">Illustration Techniques</h2>
             <ul>
-                <li>Concept art</li>
-                <li>Diseño de personajes</li>
-                <li>Referencias ortogonales para modelos 3D</li>
+                <li>Concept Art</li>
+                <li>Character Design</li>
+                <li>Orthogonal References for 3D Models</li>
             </ul>
         </section>
         <section id="software">
-            <h2 class="subtitle">Software que uso</h2>
+            <h2 class="subtitle">Software I Use</h2>
             <ul>
                 <li>Krita</li>
                 <li>PureRef</li>
                 <li>Blender</li>
             </ul>
-        </section>    
-        <section id="muestra">
-            <h2 class="subtitle">Ejemplo</h2>
-            <p>Video de muestra de lo que soy capaz</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Cuqt0D0D0twGXhp7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-          </main>
+        <section id="sample">
+            <h2 class="subtitle">Sample</h2>
+            <p>Sample video of the drawing process.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Cuqt0D0D0twGXhp7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <form action="#" method="POST" class="commission-form">
+            <h2 class="subtitle">Commission Request</h2>
+
+            <!-- Client's Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Type of Illustration -->
+            <label for="art-type">Type of Illustration:</label>
+            <select id="art-type" name="art-type" required>
+                <option value="">Select illustration type</option>
+                <option value="portrait">Portrait</option>
+                <option value="full-body">Full Body</option>
+                <option value="concept-art">Concept Art</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Project Description -->
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" name="project-description" placeholder="Briefly describe your idea"
+                rows="4" required></textarea>
+
+            <!-- Preferred Deadline -->
+            <label for="deadline">Preferred Deadline:</label>
+            <input type="date" id="deadline" name="deadline" required>
+
+            <!-- References (links to images or reference files) -->
+            <label for="references">Reference Links (Optional):</label>
+            <input type="url" id="references" name="references" placeholder="URL of reference images">
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Request</button>
+        </form>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127582.94777027916!2d-80.00350337190774!3d-2.1662120618594396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sescuela%20superior%20polit%C3%A9cnica%20del%20litoral!5e0!3m2!1ses-419!2sec!4v1729696005206!5m2!1ses-419!2sec"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
     <footer>
         <p>© David Luna - 2024</p>
         <ul>
