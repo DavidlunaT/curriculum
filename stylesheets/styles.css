@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+section ul {
+    display: flex; /* Alinea los <li> en una sola línea */
+    flex-direction: column;
+    
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+
+.commission-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;          
+    flex-wrap: wrap;                
+    justify-content: center; 
+    align-items: stretch;
+    flex-basis: 100%;
+    width: 520px;       /* Ancho inicial (puedes ajustar según prefieras) */
+    min-width: 30vw;  /* Mínimo 30% del ancho de la ventana */
+    max-width: 70vw;
+    margin: 0 auto;
+
+}
+.commission-form > section {
+    flex-basis: 100%;
+    flex-grow: 1;   
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+#portfolio img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+}
+input, select, textarea{
+    width: 500px;
+
+}
