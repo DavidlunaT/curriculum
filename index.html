@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description"
-        content="Curriculum of David Luna, web developer with experience in HTML, CSS, and JavaScript. Hobbies include drawing.">
-    <meta name="author" content="David Luna, dalun@espol.edu.ec">
-    <meta name="keywords" content="curriculum, web developer, HTML, CSS, JavaScript, David Luna">
+        content="Curriculum of David Luna's hobbie.">
+    <meta name="author" content="David Luna, daluna@espol.edu.ec">
+    <meta name="keywords" content="curriculum, web developer, HTML, CSS, JavaScript, David Luna, Portfolio, Commission">
 </head>
 
 <body>
+    <div class="central-strip">
     <header>
         <h1>David Luna</h1>
         <span>daluna@espol.edu.ec</span>
         <span>0987654321</span>
     </header>
+    
     <nav>
         <ul>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -30,10 +32,11 @@
     <main>
         <section id="portfolio">
             <h2 class="subtitle">Portfolio</h2>
-            <img src="https://placehold.co/1920x1080">
-            <img src="https://placehold.co/1920x1080">
-            <img src="https://placehold.co/1920x1080">
-            <img src="https://placehold.co/1920x1080">
+            <div id="images">
+                <img src="Imagen 1.jpg">
+                <img src="Imagen 3.jpg">
+                <img src="Imagen 2.jpg">
+            </div>
         </section>
         <section id="styles">
             <h2 class="subtitle">Artistic Style</h2>
@@ -61,66 +64,89 @@
         <section id="sample">
             <h2 class="subtitle">Sample</h2>
             <p>Sample video of my drawing process.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Cuqt0D0D0twGXhp7"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <video controls>
+                <source src="WhatsApp Video 2024-10-26 at 4.27.15 PM.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
         </section>
         <form action="#" method="POST" class="commission-form">
-            <h2 class="subtitle">Commission Request</h2>
-
-            <!-- Client's Name -->
-            <section>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </section>
-            <!-- Email -->
-            <section>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </section>
-            <!-- Type of Illustration -->
-            <section>
-                <label for="art-type">Type of Illustration:</label>
-                <select id="art-type" name="art-type" required>
-                    <option value="">Select illustration type</option>
-                    <option value="portrait">Portrait</option>
-                    <option value="full-body">Full Body</option>
-                    <option value="concept-art">Concept Art</option>
-                    <option value="other">Other</option>
-                </select>
-            </section>
-
-            <section>
-                <!-- Project Description -->
-                <label for="project-description">Project Description:</label>
-                <textarea id="project-description" name="project-description" placeholder="Briefly describe your idea"
-                    rows="1" required></textarea>
-            </section>
-            <section><!-- Preferred Deadline -->
-                <label for="deadline">Preferred Deadline:</label>
-                <input type="date" id="deadline" name="deadline" required>
-            </section>
-            <section><!-- References (links to images or reference files) -->
-                <label for="references">Reference Links (Optional):</label>
-                <input type="url" id="references" name="references" placeholder="URL of reference images">
-            </section>
-            <section><!-- Submit Button -->
-                <button type="submit">Submit Request</button>
-            </section>
+            <form action="submit_form.php" method="POST">
+                <h2>Commission Request</h2>
+            
+                <!-- Nombre -->
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                </div>
+            
+                <!-- Email -->
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+            
+                <!-- Tipo de Comisión -->
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="commission-type">Commission Type:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="commission-type" name="commission-type">
+                            <option value="2D">2D Art</option>
+                            <option value="3D">3D Model</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <!-- Descripción del Proyecto -->
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="project-description">Project Description:</label>
+                    </div>
+                    <div class="input-container">
+                        <textarea id="project-description" name="project-description" rows="5" required></textarea>
+                    </div>
+                </div>
+            
+                <!-- Referencias -->
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="references">References (URLs):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="url" id="references" name="references" placeholder="https://example.com" multiple>
+                    </div>
+                </div>
+            
+                <!-- Botón de Envío -->
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            
         </form>
+        <section>
+            <p>I'm here:</p>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127582.94777027916!2d-80.00350337190774!3d-2.1662120618594396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sescuela%20superior%20polit%C3%A9cnica%20del%20litoral!5e0!3m2!1ses-419!2sec!4v1729696005206!5m2!1ses-419!2sec"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
         <p>© David Luna - 2024</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
+        <a class="little-suprise" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Thanks for you time c:</a>
     </footer>
+    </div>
+    
 </body>
 
 </html>
